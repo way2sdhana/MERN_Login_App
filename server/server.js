@@ -81,8 +81,9 @@ connect().then(() => {
 
 /**
  * npm i otp-generator
+ * npm i nodemailer mailgen
 */
 
-/** timings were @twoHour_4Miniute_8Seconds_plus */
+/** timings were @threeHour_23Miniute_35Seconds_plus */
 
 

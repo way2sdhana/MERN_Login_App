@@ -160,7 +160,7 @@ export async function getUser(req, res){
 
 /** PUT: http://localhost:8080/api/updateuser
  * @param : {
-   "id" : "<userid>"
+   "header" : "<token>"
 }
 body: {
    firstName : '',
@@ -197,7 +197,6 @@ export async function updateUser(req, res){
 export async function generateOTP(req, res){
   req.app.locals.OTP = await otpGenerator.generate(6, { lowerCaseAlphabets: false, upperCaseAlphabets: false, specialChars: false });
   res.status(201).send({ code: req.app.locals.OTP });
-
 }
 
 
